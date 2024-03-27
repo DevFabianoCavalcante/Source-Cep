@@ -54,6 +54,7 @@ const getAddress = async (cep) => {
         .then(response => response.json())
         .then(json => addressRequisition = json)
     } else {
+        addressRequisition = null;
         cleanInfo();
         setModalError();
     }
@@ -62,7 +63,7 @@ const getAddress = async (cep) => {
 //Insert values in HTML
 const setValuesCep = async () => {
     await getAddress(inputCep.value);
-    if(!addressRequisition.erro) {
+    if(addressRequisition.erro !== true) {
         responseArea.forEach((item) => {
             const dataKey = item.getAttribute('data-address');
             item.innerText = addressRequisition[dataKey];
