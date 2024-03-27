@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <title>BUSCA CEP</title>
+</head>
+<body>
+    <main class="grid-container">
+        <div class="container-source">
+            <div class="title-source">
+                <h1>BUSCA CEP</h1>
+                <img src="./assets/img/iconMap.svg" alt="Icon Map">
+            </div>
+            <div class="source-area">
+                <label for="source">Busque seu cep</label>
+                <input id="input-cep" type="text" name="source" placeholder="00000-000" maxlength="9">
+                <button type="button" id="btn-submit">BUSCAR</button>
+            </div>
+        </div>
+
+        <div class="container-address">
+            <div class="info-address-container">
+                <div class="info-address">
+                    <span class="subtopic-address">CEP</span>
+                    <span data-address="cep" class="response-address-area"></span>
+                </div>
+                <div class="info-address">
+                    <span class="subtopic-address">Localidade</span>
+                    <span data-address="localidade" class="response-address-area"></span>
+                </div>
+                <div class="info-address">
+                    <span class="subtopic-address">Logradouro</span>
+                    <span data-address="logradouro" class="response-address-area"></span>
+                </div>
+                <div class="info-address">
+                    <span class="subtopic-address">Bairro</span>
+                    <span data-address="bairro" class="response-address-area"></span>
+                </div>
+                <div class="info-address">
+                    <span class="subtopic-address">DDD</span>
+                    <span data-address="ddd" class="response-address-area"></span>
+                </div>
+                <div class="info-address">
+                    <span class="subtopic-address">IBGE</span>
+                    <span data-address="ibge" class="response-address-area"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="text/javascript" src="/assets/script.js"></script>
+</body>
+</html>
