@@ -31,7 +31,7 @@ body, p, h1, h2, ul, li {
 
 @media(max-width: 930px) {
     .grid-container {
-        grid-template-rows: 35% 65%;
+        grid-template-rows: 30% 70%;
         overflow-x: hidden;
     }
 }
@@ -177,7 +177,7 @@ body, p, h1, h2, ul, li {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 2.2rem;
+    margin-bottom: 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -197,11 +197,15 @@ body, p, h1, h2, ul, li {
 }
 
 @media(max-width: 930px) {
+    .container-address {
+        align-items: flex-start;
+    }
 
     .info-address-container {
         height: auto;
         width: 33rem;
         padding: 0.5rem;
+        margin-top: 2rem;
     }
 
     .info-address {
